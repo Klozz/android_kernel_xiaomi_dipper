@@ -45,3 +45,6 @@ obj-$(CONFIG_DTS_SRS_TM) += msm-dts-srs-tm-config.o
 obj-$(CONFIG_QTI_PP) += msm-qti-pp-config.o
 obj-y += codecs/
 obj-y += elliptic/
+
+subdir-ccflags-y += \
+    -Wno-error
